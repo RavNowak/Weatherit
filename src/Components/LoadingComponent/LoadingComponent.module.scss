@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.356);
+  height: 65%;
+  width: 80%;
+  margin: 5% 0;
+}
+
+.checking {
+  color: white;
+  letter-spacing: 3px;
+  font-size: 18px;
+}

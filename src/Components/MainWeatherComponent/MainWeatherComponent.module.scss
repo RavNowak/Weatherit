@@ -1,0 +1,31 @@
+.container {
+  width: calc(100vw - (100vw - 100%));
+  height: 100vh;
+  background-image: url('../../assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+}
+
+.titleContainer {
+  grid-row: 1/2;
+}
+
+.weatherContainer {
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerComponent {
+  grid-row: 3/4;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    height: auto;
+    grid-template-rows: auto auto auto;
+  }
+}

@@ -10,9 +10,7 @@ const WeatherInfoComponent = ({ weather, forecast, handleCityChange }) => {
         weather={weather}
         handleCityChange={handleCityChange}
       ></BasicWeatherComponent>
-      <ForecastWeatherComponent
-        weather={forecast}
-      ></ForecastWeatherComponent>
+      <ForecastWeatherComponent weather={forecast}></ForecastWeatherComponent>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import moment from "moment";
 import CitySearchBarComponent from "../CitySearchBarComponent/CitySearchBarComponent";
 import styles from "./BasicWeatherComponent.module.scss";
 
-const BasicWeatherComponent = ({ weather, handleCityChange }) => {
+const BasicWeatherComponent = ({ weather, handleCityChange, invalidCity, clearCityError }) => {
   let [time, setTime] = useState(moment().format("MMMM Do YYYY, h:mm a"));
 
   useEffect(() => {
@@ -19,8 +19,15 @@ const BasicWeatherComponent = ({ weather, handleCityChange }) => {
       <div className={styles.cityBar}>
         <CitySearchBarComponent
           handleCityChange={handleCityChange}
+          clearCityError={clearCityError}
         ></CitySearchBarComponent>
       </div>
+
+      {invalidCity && (
+        <p className={styles.invalidCity}>
+          Weather cannot be found for: {invalidCity}
+        </p>
+      )}
 
       <div className={styles.basicInfos}>
         <p className={styles.city}>{weather.city}</p>

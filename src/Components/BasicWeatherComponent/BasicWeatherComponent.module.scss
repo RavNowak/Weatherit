@@ -62,10 +62,17 @@
   }
 }
 
+.invalidCity {
+  color: rgb(209, 0, 0);
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 @media only screen and (max-width: 900px) {
   .container {
     width: 100%;
-    height: 330px;
+    height: 340px;
     border-right: none;
   }
 }

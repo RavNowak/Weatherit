@@ -9,8 +9,34 @@
   margin: 5% 0;
 }
 
-.checking {
+.title {
   color: white;
   letter-spacing: 3px;
-  font-size: 18px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.oops {
+  color: rgba(255, 255, 255, 0.646);
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  font-size: 70px;
+  text-align: center;
+}
+
+.geoInfo {
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+  padding: 0 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    min-height: 70vh;
+  }
+
+  .title {
+    font-size: 18px;
+  }
 }

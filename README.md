@@ -4,8 +4,9 @@
 
 ## Used tools:
 - React (hooks)
-- sass
+- Sass
 - geolocation API
+- Chart.js lib
 - weather API (https://openweathermap.org/api)
 
 ## Local building
